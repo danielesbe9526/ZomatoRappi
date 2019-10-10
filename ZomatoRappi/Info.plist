@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>userKey</key>
+	<string>67d1271db2cd01c0e9edb4983320ed1e</string>
 	<key>CFBundleDisplayName</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>

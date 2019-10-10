@@ -9,21 +9,20 @@
 import Alamofire
 
 enum APIRouter: URLRequestConvertible {
-    case getRestautantsCloser(latitud: Float, longitude: Float)
+    case getCategories()
     
     private var method: HTTPMethod {
         switch self {
-        case .getRestautantsCloser:
-            return .post
+        case .getCategories:
+            return .get
         }
     }
 
     // MARK : - Path
     private var fullURL: String {
         switch self {
-        case .getRestautantsCloser(latitud: let lat, longitude: let long):
-            return ""
-        
+        case .getCategories():
+            return "https://developers.zomato.com/api/v2.1/categories"
         }
     }
     
@@ -31,7 +30,7 @@ enum APIRouter: URLRequestConvertible {
     
     private var parameters: Parameters? {
         switch self {
-        case .getRestautantsCloser(latitud: let lat, longitude: let long):
+        case .getCategories():
             return ["":""]
         }
     }
@@ -41,6 +40,7 @@ enum APIRouter: URLRequestConvertible {
             return ""
         }
         
+//        67d1271db2cd01c0e9edb4983320ed1e
         return value
     }
     
@@ -50,7 +50,7 @@ enum APIRouter: URLRequestConvertible {
         let header = ["user-key": userKey]
         
         switch self {
-        case .getRestautantsCloser(latitud: _, longitude: _):
+        case .getCategories():
             return header
         }
     }

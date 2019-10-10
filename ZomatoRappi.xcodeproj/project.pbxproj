@@ -17,6 +17,9 @@
 		5C2A44BA234E783400091C26 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A44B9234E783400091C26 /* APIClient.swift */; };
 		5C2A44BC234E783E00091C26 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A44BB234E783E00091C26 /* APIRouter.swift */; };
 		5C2A44BF234EA3D000091C26 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A44BE234EA3D000091C26 /* Restaurant.swift */; };
+		DA719709234FB3F7006C6980 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA719707234FB3F7006C6980 /* TableViewCell.swift */; };
+		DA71970A234FB3F7006C6980 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA719708234FB3F7006C6980 /* TableViewCell.xib */; };
+		DA71970D234FB996006C6980 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71970C234FB996006C6980 /* Category.swift */; };
 		DBD0FB4BB70C2DA5BAF509F3 /* Pods_ZomatoRappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0DB7ADB407B70430020EB9 /* Pods_ZomatoRappi.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		5C2A44BB234E783E00091C26 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		5C2A44BE234EA3D000091C26 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		9D28CC136B6C2F4AC94444B5 /* Pods-ZomatoRappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoRappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZomatoRappi/Pods-ZomatoRappi.release.xcconfig"; sourceTree = "<group>"; };
+		DA719707234FB3F7006C6980 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DA719708234FB3F7006C6980 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		DA71970C234FB996006C6980 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +93,7 @@
 		5C2A44B3234E6D8B00091C26 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				5C2A44B4234E6DAA00091C26 /* MainPageViewController.swift */,
+				DA71970B234FB923006C6980 /* UI */,
 				5C2A44B6234E713D00091C26 /* MainPageViewModel.swift */,
 			);
 			path = MainPage;
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2A44BE234EA3D000091C26 /* Restaurant.swift */,
+				DA71970C234FB996006C6980 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +132,16 @@
 				3B0DB7ADB407B70430020EB9 /* Pods_ZomatoRappi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA71970B234FB923006C6980 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5C2A44B4234E6DAA00091C26 /* MainPageViewController.swift */,
+				DA719707234FB3F7006C6980 /* TableViewCell.swift */,
+				DA719708234FB3F7006C6980 /* TableViewCell.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C2A44AB234E69C900091C26 /* LaunchScreen.storyboard in Resources */,
+				DA71970A234FB3F7006C6980 /* TableViewCell.xib in Resources */,
 				5C2A44A8234E69C900091C26 /* Assets.xcassets in Resources */,
 				5C2A44A6234E69C300091C26 /* Main.storyboard in Resources */,
 			);
@@ -248,9 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C2A44B7234E713D00091C26 /* MainPageViewModel.swift in Sources */,
+				DA719709234FB3F7006C6980 /* TableViewCell.swift in Sources */,
 				5C2A44BC234E783E00091C26 /* APIRouter.swift in Sources */,
 				5C2A44A3234E69C300091C26 /* ViewController.swift in Sources */,
 				5C2A44BF234EA3D000091C26 /* Restaurant.swift in Sources */,
+				DA71970D234FB996006C6980 /* Category.swift in Sources */,
 				5C2A44B5234E6DAA00091C26 /* MainPageViewController.swift in Sources */,
 				5C2A44BA234E783400091C26 /* APIClient.swift in Sources */,
 				5C2A44A1234E69C300091C26 /* AppDelegate.swift in Sources */,
